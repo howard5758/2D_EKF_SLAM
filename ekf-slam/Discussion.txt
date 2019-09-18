@@ -1,0 +1,10 @@
+First, I apologize for not having any final plots; the program would become extremely slow after a few hundred time steps and it took several hours to reach t = 3000 and my laptop somehow closed my terminal...
+In this discussion I will briefly explain the provided plots and some observations.
+
+Consider small_noise_200t first. This plot represents the state at t = 200 using small noise. We can see that the estimations of the robot and landmarks are very close to their actual locations and the uncertainties are small as well. Even though I did not save a plot of later time steps, the estimation indeed followed the robot and landmarks closely.
+
+Then take a look at large_noise_200t. This plot represents the state at t = 200 using large noise. It's observable that the estimations are a bit off comparing to small noise scenario, and the uncertainties also could not get smaller with multiple state updates. Nonetheless, the estimations still follow the approximate locations of robot and landmarks.
+
+pred_only_200t represents the state at t = 200 using only predictions. We can also observe offset between estimation and actual robot position, and the uncertainty is huge comparing to the previous two scenarios because the robot has zero reference point and can only blindly follow the control inputs.
+
+I would suggest anyone reading the discussion to run the actual program and verify that using small_noise indeed provide decent localization and mapping.

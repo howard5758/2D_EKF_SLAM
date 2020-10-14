@@ -1,6 +1,6 @@
 # 2D_EKF_SLAM
 
-# Useful functions (* denotes files you should expect to modify)
+# Useful functions
 
 EKFSLAM.py:
 

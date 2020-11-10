@@ -18,3 +18,6 @@ Visualization.py:
 
     drawEstimates: Plots the mean estimates of the robot and map poses
                    along with ellipses that visualize uncertainty as level sets
+
+To run testing with provided map:
+$python RunEKFSLAM.py ekf-slam-small/large-noise.pickle
